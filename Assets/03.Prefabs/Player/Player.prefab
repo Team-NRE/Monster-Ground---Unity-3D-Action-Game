@@ -1226,6 +1226,7 @@ GameObject:
   - component: {fileID: 9200370575270758054}
   - component: {fileID: 4381793204001374249}
   - component: {fileID: 493413593773202951}
+  - component: {fileID: 759383459243322993}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1305,19 +1306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996a104553b43c34586a3765b9a5464f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  defensivePower: 10
-  dodgeChance: 10
-  walkSpeed: 10
-  bulletDamage: 100
-  bulletSpeed: 3000
-  shotSpeed: 1
-  criticalChance: 10
-  criticalDamage: 100
-  level: 1
-  haveExperience: 0
-  timeLevel: 1
-  playTimes: 0
 --- !u!114 &5408110468700009541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,6 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nowHealth: 0
+  LoseUI: {fileID: 0}
 --- !u!114 &2128158603171663763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1392,6 +1381,21 @@ MonoBehaviour:
   - {fileID: -8008461807771751703, guid: 041048f51451675428f062c2abe75d03, type: 3}
   - {fileID: 6023173198247996758, guid: 041048f51451675428f062c2abe75d03, type: 3}
   - {fileID: -3486159799729566504, guid: 041048f51451675428f062c2abe75d03, type: 3}
+--- !u!114 &759383459243322993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409376055009876538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705d1bc30f198164fb4971b0eb2df49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionText: {fileID: 0}
+  theInventory: {fileID: 0}
+  _bullet: {fileID: 0}
 --- !u!1 &3409376055009876540
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class effectItem : MonoBehaviour
                     {
                         if (itemEffects[i].part[j] == HP)
                         {
-                            gameObject.GetComponent<PlayerHealth>().nowHealth += 10;
+                            gameObject.GetComponent<PlayerHealth>().getHealth(10);
                         }
                         else if (itemEffects[i].part[j] == CriticalChance)
                         {
@@ -78,10 +78,11 @@ public class effectItem : MonoBehaviour
                         }
                     }
                     Debug.Log(_item.itemName + "을 사용했습니다");
+                    break;
                 }
-                return;
             }
-        }
-        Debug.Log("itemEffect목록에 일치하는 itemName이 없습니다.");
+        } 
+        else
+            Debug.Log("itemEffect목록에 일치하는 itemName이 없습니다.");
     }
 }

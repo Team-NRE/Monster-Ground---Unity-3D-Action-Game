@@ -23,8 +23,8 @@ public class itemAction : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<DefenceCore>().enabled = false;
-        gameObject.GetComponent<BackPackCannon>().enabled = false;
+        //gameObject.GetComponent<DefenceCore>().enabled = false;
+        //gameObject.GetComponent<BackPackCannon>().enabled = false;
     }
 
     private void OnTriggerEnter(Collider coll)
@@ -53,7 +53,7 @@ public class itemAction : MonoBehaviour
             Debug.Log("item collision finish");
             //actionText.gameObject.SetActive(false);
             //ItemInfoDisappear();
-        }
+        }/*
         //액티브 아이템, 스팀팩, 각성제 등등
         else if (coll.gameObject.CompareTag("ActiveItem"))
         {
@@ -96,6 +96,6 @@ public class itemAction : MonoBehaviour
             theInventory.AddItem(nowItem);
             gameObject.GetComponent<DefenceCore>().enabled = true;
             Destroy(coll.gameObject);
-        }
+        }*/
     }
 }

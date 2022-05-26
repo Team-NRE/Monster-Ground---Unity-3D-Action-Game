@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     private GameObject healthGaugeUI;   // 체력 게이지 UI
     private Image gauge;    // 체력 게이지 UI의 이미지 컴포넌트
     public float nowHealth;  // 현재 체력
+
+    public GameObject LoseUI;
     
 
     void Start()
@@ -35,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
         if (gauge.fillAmount == 0)
         {
             Debug.Log("Die");
-            Destroy(this.gameObject,1.0f);
+            LoseUI.SetActive(true);
         }
     }
 
