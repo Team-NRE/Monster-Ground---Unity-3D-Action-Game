@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
             nowHealth = PlayerStats.maxHealth;
 
         // 만약 죽으면
-        if (gauge.fillAmount == 0)
+        if (gauge.fillAmount <= 0)
         {
             Debug.Log("Die");
             LoseUI.SetActive(true);

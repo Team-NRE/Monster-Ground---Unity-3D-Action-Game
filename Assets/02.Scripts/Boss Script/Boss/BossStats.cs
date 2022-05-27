@@ -9,7 +9,7 @@ public class BossStats : MonoBehaviour
     #region BossStats
 
     [Header ("--Health Type")]
-    public static float Boss_HP = 1000;
+    public static float Boss_HP = 200;
     public static float Boss_Defensive_Power = 1000;
 
     [Header ("--Attack Type")]

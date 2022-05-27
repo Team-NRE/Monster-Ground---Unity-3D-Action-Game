@@ -3194,6 +3194,7 @@ MonoBehaviour:
   gauge: {fileID: 0}
   FireFly: {fileID: 8947848765814189462}
   Meteor: {fileID: 0}
+  WinUI: {fileID: 0}
   nowBossHealth: 0
   nowBossDefensive: 0
 --- !u!195 &1965593408968515963
@@ -4025,8 +4026,16 @@ PrefabInstance:
       value: Flamethrower
       objectReference: {fileID: 0}
     - target: {fileID: 3139029984731315527, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139029984731315527, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4235135587025949830, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5330752449178990269, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
       propertyPath: m_RootOrder
@@ -4071,6 +4080,10 @@ PrefabInstance:
     - target: {fileID: 5330752449178990269, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 11.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513664664775624238, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d2179d3db7cab41aacb06080ae407f, type: 3}

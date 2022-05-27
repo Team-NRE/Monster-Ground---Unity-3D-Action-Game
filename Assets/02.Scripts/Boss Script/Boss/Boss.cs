@@ -32,6 +32,7 @@ public class Boss : MonoBehaviour
     
     public GameObject FireFly;
     public GameObject Meteor;
+    public GameObject WinUI;
     
     
 
@@ -319,12 +320,7 @@ public class Boss : MonoBehaviour
         //보스 죽으면 게이트 생성
         if(isDie == true)
         {
-            GameObject.Find("Portal").transform.GetChild(0).gameObject.SetActive(true);
-            
-            GameObject.Find("UserUI").transform.GetChild(2).gameObject.SetActive(true);
-            GameObject.Find("UserUI").transform.GetChild(2).GetChild(0).gameObject.SetActive(false); 
-            GameObject.Find("UserUI").transform.GetChild(2).GetChild(1).gameObject.SetActive(true);
-            
+            WinUI.SetActive(true);   
         }
     }
     
