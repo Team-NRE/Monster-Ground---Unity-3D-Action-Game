@@ -1223,10 +1223,12 @@ GameObject:
   - component: {fileID: 7292933099471651357}
   - component: {fileID: 5408110468700009541}
   - component: {fileID: 2128158603171663763}
-  - component: {fileID: 9200370575270758054}
+  - component: {fileID: -2854034007564737120}
   - component: {fileID: 4381793204001374249}
   - component: {fileID: 493413593773202951}
   - component: {fileID: 759383459243322993}
+  - component: {fileID: -5978491258730273266}
+  - component: {fileID: 2851859430990509528}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1332,7 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2427d3081f62924e90f38a2ec68fa59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &9200370575270758054
+--- !u!114 &-2854034007564737120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1345,6 +1347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8222332823237018225, guid: 131f7bd19a3de9a44bc779553c0a9421, type: 3}
+  isSplash: 0
 --- !u!114 &4381793204001374249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,7 +1398,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionText: {fileID: 0}
   theInventory: {fileID: 0}
-  _bullet: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &-5978491258730273266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409376055009876538}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d25963f69164e44a0e793155c386f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2851859430990509528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3409376055009876538}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67cf0b02d77dd2b4e85706d600780cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3409376055009876540
 GameObject:
   m_ObjectHideFlags: 0

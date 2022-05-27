@@ -10,6 +10,9 @@ public class PlayerShooting : MonoBehaviour
     private Transform FirePoint;    // 총알 발사 위치 컴포넌트
     private float coolingTime;  // 발사 쿨타임 체크용
 
+    //스플뎀용
+    public bool isSplash;
+
     void Start()
     {
         // 기본 값 설정
@@ -37,7 +40,11 @@ public class PlayerShooting : MonoBehaviour
                 bulletStats.Speed = PlayerStats.bulletSpeed;    // 총알 속도
                 bulletStats.criticalChance = PlayerStats.criticalChance;    // 크리티컬 확률
                 bulletStats.criticalDamage = PlayerStats.criticalDamage;    // 크리티컬 데미지
-
+                
+                if (isSplash == true)
+                    bullet.GetComponent<ExplosiveBullet>().isSplash = true;
+                else
+                    bullet.GetComponent<ExplosiveBullet>().isSplash = false;
                 // 쿨타임 초기화
                 coolingTime = 0;
             }

@@ -14,6 +14,7 @@ public class ExplosiveBullet : MonoBehaviour
     private float radius = 10.0f;
     public LayerMask layerMask;
     private float ExpDamage=100.0f;
+    public bool isSplash;
 
     private void Start()
     {
@@ -22,10 +23,13 @@ public class ExplosiveBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision coll)
     {
-        Collider[] colls = Physics.OverlapSphere(transform.position, radius, layerMask);
-        for(int i = 0; i < colls.Length; i++)
+        if (isSplash == true)
         {
-            colls[i].GetComponent<Enemy>().getHealth(-ExpDamage);
+            Collider[] colls = Physics.OverlapSphere(transform.position, radius, layerMask);
+            for (int i = 0; i < colls.Length; i++)
+            {
+                colls[i].GetComponent<Enemy>().getHealth(-ExpDamage);
+            }
         }
     }
 }

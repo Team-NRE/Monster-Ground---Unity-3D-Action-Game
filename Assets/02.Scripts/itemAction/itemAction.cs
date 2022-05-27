@@ -13,16 +13,17 @@ public class itemAction : MonoBehaviour
     //public LayerMask layerMask;
     
     private CommonItemDic dic;
-    private Item item;
+    private float textTimer = 5.0f;
 
     //스플뎀 탬 구현 위한 변수
-    public Bullet _bullet;
+    public GameObject player;
 
     //중첩 아이템 구현용
     public static int steamCount = 0;
 
     private void Start()
     {
+        actionText.gameObject.SetActive(false);
         //gameObject.GetComponent<DefenceCore>().enabled = false;
         //gameObject.GetComponent<BackPackCannon>().enabled = false;
     }
@@ -41,18 +42,35 @@ public class itemAction : MonoBehaviour
             PlayerStats.dodgeChance += nowItem.DodgeChance;
             PlayerStats.walkSpeed += nowItem.WalkSpeed;
             PlayerStats.bulletDamage += nowItem.BulletDamage;
-            PlayerStats.bulletSpeed += nowItem.BulletSpeed;
+            PlayerStats.bulletSpeed -= nowItem.BulletSpeed;
             PlayerStats.shotSpeed += nowItem.ShotSpeed;
             PlayerStats.criticalChance += nowItem.CriticalChance;
             PlayerStats.criticalDamage += nowItem.CriticalDamage;
-            Debug.Log(PlayerStats.maxHealth+"\n"+PlayerStats.bulletDamage);
             Destroy(coll.gameObject);
             //ItemInfoAppear();
-            //actionText.text = coll.gameObject.name;
-            //actionText.gameObject.SetActive(true);
             Debug.Log("item collision finish");
             //actionText.gameObject.SetActive(false);
             //ItemInfoDisappear();
+
+            //ExpBullet, SteamPack, DeliMeat 효과 스크립트 발현
+            if (coll.gameObject.name == "06. ExplosiveBullet")
+            {
+                gameObject.GetComponent<PlayerShooting>().isSplash = true;
+            }
+            else if(coll.gameObject.name == "08. SteamPack")
+            {
+                gameObject.GetComponent<SteamPack>().enabled = true;
+            }
+            else if(coll.gameObject.name == "15. DeliMeat")
+            {
+                gameObject.GetComponent<DeliMeat>().enabled = true;
+            }
+
+            //item info 출력
+            int index = coll.gameObject.name.IndexOf("(Clone)");
+            //(clone)을 제외하고 출력하기 위한 코드
+            actionText.text = coll.gameObject.name.Substring(0,index) + "을/를 획득!";
+            actionText.gameObject.SetActive(true);
         }/*
         //액티브 아이템, 스팀팩, 각성제 등등
         else if (coll.gameObject.CompareTag("ActiveItem"))
@@ -97,5 +115,15 @@ public class itemAction : MonoBehaviour
             gameObject.GetComponent<DefenceCore>().enabled = true;
             Destroy(coll.gameObject);
         }*/
+    }
+    private void Update()
+    {
+        textTimer -= Time.deltaTime;
+
+        if (textTimer < 0.0f)
+        {
+            actionText.gameObject.SetActive(false);
+            textTimer = 5.0f;
+        }
     }
 }
