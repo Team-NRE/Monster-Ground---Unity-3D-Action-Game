@@ -21,6 +21,6 @@ MonoBehaviour:
   WalkSpeed: 2
   BulletDamage: 0
   BulletSpeed: 0
-  ShotSpeed: 5
+  ShotSpeed: 0.1
   CriticalDamage: 0
   CriticalChance: 0

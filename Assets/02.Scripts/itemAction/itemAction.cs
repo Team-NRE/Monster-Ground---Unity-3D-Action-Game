@@ -42,8 +42,8 @@ public class itemAction : MonoBehaviour
             PlayerStats.dodgeChance += nowItem.DodgeChance;
             PlayerStats.walkSpeed += nowItem.WalkSpeed;
             PlayerStats.bulletDamage += nowItem.BulletDamage;
-            PlayerStats.bulletSpeed -= nowItem.BulletSpeed;
-            PlayerStats.shotSpeed += nowItem.ShotSpeed;
+            PlayerStats.bulletSpeed += nowItem.BulletSpeed;
+            PlayerStats.shotSpeed -= nowItem.ShotSpeed;
             PlayerStats.criticalChance += nowItem.CriticalChance;
             PlayerStats.criticalDamage += nowItem.CriticalDamage;
             Destroy(coll.gameObject);
@@ -69,9 +69,12 @@ public class itemAction : MonoBehaviour
             //item info 출력
             int index = coll.gameObject.name.IndexOf("(Clone)");
             //(clone)을 제외하고 출력하기 위한 코드
-            actionText.text = coll.gameObject.name.Substring(0,index) + "을/를 획득!";
+            if (index > 0)
+                actionText.text = coll.gameObject.name.Substring(0, index) + " 을/를 획득!";
+            //actionText.text = coll.gameObject.name;
             actionText.gameObject.SetActive(true);
-        }/*
+        }
+        /*
         //액티브 아이템, 스팀팩, 각성제 등등
         else if (coll.gameObject.CompareTag("ActiveItem"))
         {
