@@ -43,7 +43,7 @@ public class itemAction : MonoBehaviour
             PlayerStats.walkSpeed += nowItem.WalkSpeed;
             PlayerStats.bulletDamage += nowItem.BulletDamage;
             PlayerStats.bulletSpeed += nowItem.BulletSpeed;
-            PlayerStats.shotSpeed -= nowItem.ShotSpeed;
+            PlayerStats.shotSpeed += nowItem.ShotSpeed;
             PlayerStats.criticalChance += nowItem.CriticalChance;
             PlayerStats.criticalDamage += nowItem.CriticalDamage;
             Destroy(coll.gameObject);
@@ -51,6 +51,17 @@ public class itemAction : MonoBehaviour
             Debug.Log("item collision finish");
             //actionText.gameObject.SetActive(false);
             //ItemInfoDisappear();
+
+            if(PlayerStats.defensivePower > 29.9f)
+            {
+                PlayerStats.defensivePower = 29.9f;
+            }
+
+            // 공속 2.7f 최대치 
+            if(PlayerStats.shotSpeed > 2.7f)
+            {
+                PlayerStats.shotSpeed = 2.7f;
+            }
 
             //ExpBullet, SteamPack, DeliMeat 효과 스크립트 발현
             if (coll.gameObject.name == "06. ExplosiveBullet")

@@ -12,6 +12,8 @@ public class PlayerLevel : MonoBehaviour
     private Image gauge;    // 경험치 게이지 UI의 이미지 컴포넌트
     private float maxExperienceValue; // 최대 경험치량
 
+    public itemSpawner itemspawner;
+    
     void Start()
     {
         // 기본 값 설정
@@ -20,6 +22,8 @@ public class PlayerLevel : MonoBehaviour
         levelText = levelTextUI.GetComponent<Text>();
         gauge = levelGaugeUI.GetComponent<Image>();
         maxExperienceValue = experienceFormula(PlayerStats.level);
+
+        itemspawner = GameObject.FindWithTag("itemSpawner").GetComponent<itemSpawner>();
     }
 
     void Update()
@@ -39,6 +43,8 @@ public class PlayerLevel : MonoBehaviour
             PlayerStats.haveExperience -= maxExperienceValue;   // 최대 경험치만큼 현재 경험치 감소
 
             maxExperienceValue = experienceFormula(PlayerStats.level);  // 최대 경험치 재조정
+
+            itemspawner.ItemSpawners();
         }
     }
 

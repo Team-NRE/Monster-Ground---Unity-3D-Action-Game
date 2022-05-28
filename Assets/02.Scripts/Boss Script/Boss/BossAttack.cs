@@ -18,9 +18,11 @@ public class BossAttack : MonoBehaviour
         
         if(other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerHealth>().nowHealth -= damage; 
+            other.gameObject.GetComponent<PlayerHealth>().getHealth(-damage); 
             
             Debug.Log("boss attack");
         }
     }
+
+    
 }

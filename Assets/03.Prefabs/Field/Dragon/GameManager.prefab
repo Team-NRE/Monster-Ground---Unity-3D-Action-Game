@@ -47,3 +47,4 @@ MonoBehaviour:
   Gotiteminfo: {fileID: 0}
   Quest: {fileID: 0}
   player: {fileID: 0}
+  ItemSpawners: {fileID: 0}

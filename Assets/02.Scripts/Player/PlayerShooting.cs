@@ -9,6 +9,7 @@ public class PlayerShooting : MonoBehaviour
     private GameObject FirePosition;    // 총알 발사 위치 오브젝트
     private Transform FirePoint;    // 총알 발사 위치 컴포넌트
     private float coolingTime;  // 발사 쿨타임 체크용
+    
 
     //스플뎀용
     public bool isSplash;
@@ -18,18 +19,19 @@ public class PlayerShooting : MonoBehaviour
         // 기본 값 설정
         FirePosition = GameObject.Find("FirePos").gameObject;
         FirePoint = FirePosition.GetComponent<Transform>();
+        
         coolingTime = PlayerStats.shotSpeed;
     }
 
     void Update()
     {
-        // 쿨타임이 발사 속도보다 작을 시 시간을 더해줌
-        if (coolingTime < PlayerStats.shotSpeed)
-            coolingTime += Time.deltaTime;
+        // 쿨타임이 발사 속도보다 작을 시 쿨타임 시간을 빼줌
+        if (coolingTime > PlayerStats.shotSpeed)
+            coolingTime -= Time.deltaTime;
 
         if (Input.GetMouseButton(0))    // 마우스 좌클릭
         {
-            if (coolingTime >= PlayerStats.shotSpeed)   // 총알 발사 가능 상태
+            if (coolingTime <= PlayerStats.shotSpeed)   // 총알 발사 가능 상태
             {
                 // 총알 오브젝트 소환
                 GameObject bullet = Instantiate(Bullet, FirePoint.position, FirePoint.rotation) as GameObject;
@@ -46,8 +48,10 @@ public class PlayerShooting : MonoBehaviour
                 else
                     bullet.GetComponent<ExplosiveBullet>().isSplash = false;
                 // 쿨타임 초기화
-                coolingTime = 0;
+                coolingTime = 3f;
             }
         }
+
+        
     }
 }

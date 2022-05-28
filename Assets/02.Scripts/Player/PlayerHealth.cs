@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject LoseUI;
     
+    
 
     void Start()
     {
@@ -38,8 +39,13 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Die");
             LoseUI.SetActive(true);
+            
+            GetComponent<CharacterController>().enabled = false;
+            GetComponent<PlayerShooting>().enabled = false;
         }
     }
+
+    
 
     public string getHealth(float h)
     {

@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
 
     public GameObject effect;
 
+    
     void Start()
     {
         GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * Speed);

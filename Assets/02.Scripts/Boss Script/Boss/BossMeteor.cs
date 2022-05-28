@@ -26,9 +26,11 @@ public class BossMeteor : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerHealth>().nowHealth -= MeteorDamage;
+            other.gameObject.GetComponent<PlayerHealth>().getHealth(-MeteorDamage); 
 
             Debug.Log("Meteor Damage");
+
+            
         }
 
             

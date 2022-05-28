@@ -16,17 +16,19 @@ public class PlayerMoving : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         moveDirection = Vector3.zero;
-        mouseSpeed = 5f;
+        mouseSpeed = 6f; 
     }
 
     void Update()
     {
+        
+        
         // 마우스 회전 설정
         transform.Rotate(0f, Input.GetAxis("Mouse X") * mouseSpeed, 0f, Space.World);
 
         // x, z 움직임 Input
         float x = Input.GetAxis("Horizontal");
-        float y = -9.8f * Time.deltaTime;
+        float y = -300f * Time.deltaTime; 
         float z = Input.GetAxis("Vertical");
 
         // 벡터 형식으로 변환 및 걷는 속도 곱

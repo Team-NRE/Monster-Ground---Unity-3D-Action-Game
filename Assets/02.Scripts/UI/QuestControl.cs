@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class QuestControl : MonoBehaviour
 {
+    public GameObject itemspawner;
     public GameObject[] QuestList;
     public int QuestNumber;
 
@@ -38,6 +39,7 @@ public class QuestControl : MonoBehaviour
                     QuestCount[1] = 0;
                 } 
                 else
+                    itemspawner.SetActive(false);
                     GameObject.Find("Portal").transform.GetChild(0).gameObject.SetActive(true);
                 break;
         }

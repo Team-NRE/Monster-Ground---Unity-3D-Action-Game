@@ -51,12 +51,14 @@ public class Enemy : MonoBehaviour
 
             if (Attack_Speed - anim["attack"].length >= Now_Attack_Cooling_Time)
                 anim.CrossFade("move");
+                nvAgent.isStopped = false;
 
             if (Now_Attack_Cooling_Time > 0f)
                 Now_Attack_Cooling_Time -= Time.deltaTime;
             
-            else if(distance <= 2.5f)
+            else if(distance <= 5f)
             {
+                nvAgent.isStopped = true;
                 string result = player.GetComponent<PlayerHealth>().getHealth(-Attack_Power);
                 Debug.Log(result);
                 

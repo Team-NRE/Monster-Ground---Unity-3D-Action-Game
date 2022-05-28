@@ -33,7 +33,7 @@ public class Boss : MonoBehaviour
     public GameObject FireFly;
     public GameObject Meteor;
     public GameObject WinUI;
-    
+    public GameObject WinText;
     
 
     
@@ -41,7 +41,7 @@ public class Boss : MonoBehaviour
     
     //행동 초기화
     bool isDie = false;
-    
+    public bool check = false;
 
     float AttackDistance = 80.0f; //공격 탐지 거리
     float FlyTrace = 180.0f; //공중 추적 사정거리
@@ -66,6 +66,7 @@ public class Boss : MonoBehaviour
 
     
     
+
     void Start()
     {
         nowBossHealth = BossStats.Boss_HP;
@@ -184,7 +185,7 @@ public class Boss : MonoBehaviour
                     break;
 
                 case AnimState.FlyTRACE :
-                    nowBossDefensive = PlayerStats.bulletDamage;
+                    nowBossDefensive = 10;
                     
                     FireFly.SetActive(false);
                     
@@ -206,7 +207,7 @@ public class Boss : MonoBehaviour
                     
                 case AnimState.Attack :
                     //방어력 원래대로
-                    nowBossDefensive = PlayerStats.bulletDamage - 30;
+                    nowBossDefensive = 5;
                     
                     FireFly.SetActive(true);
                     Meteor.SetActive(false);
@@ -220,7 +221,7 @@ public class Boss : MonoBehaviour
 
                     NavMesh.SetDestination(Player.position);
                     NavMesh.isStopped = false;
-                    NavMesh.speed = 20.0f;
+                    NavMesh.speed = PlayerStats.walkSpeed;
                         
                     anim.SetBool(hashFlame,true);
                     
@@ -257,7 +258,7 @@ public class Boss : MonoBehaviour
                 case AnimState.Meteor :
                 {
                     //방어력 증가
-                    nowBossDefensive = PlayerStats.bulletDamage - 1;
+                    nowBossDefensive = 10;
                     
                     FireFly.SetActive(false);
                     
@@ -320,10 +321,31 @@ public class Boss : MonoBehaviour
         //보스 죽으면 게이트 생성
         if(isDie == true)
         {
-            WinUI.SetActive(true);   
+            if(check == true)
+            {
+                WinUI.SetActive(false);
+            }
+            
+            else if (check == false)
+            {
+                WinUI.SetActive(true);
+            }
+
+            StartCoroutine(Win());
         }
     }
     
+    
+    
+    IEnumerator Win()
+    {
+        yield return new WaitForSeconds(10.0f);
+
+        WinUI.SetActive(false);
+        WinText.SetActive(true);
+
+        check = true;
+    }
 
     public void getHealth(float h) 
     {
@@ -340,13 +362,6 @@ public class Boss : MonoBehaviour
 
             Debug.Log("Damage");
         }
-    }
-
-/*//Rotation
-var targetPosition = NavMesh.pathEndPosition;
-var targetPoint = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
-var _direction = (targetPoint - transform.position).normalized;
-var _lookRotation = Quaternion.LookRotation(_direction);
-transform.rotation = Quaternion.RotateTowards(transform.rotation, _lookRotation, 360);*/    
+    }   
 }
 

@@ -3289,6 +3289,8 @@ MonoBehaviour:
   FireFly: {fileID: 8947848765814189462}
   Meteor: {fileID: 0}
   WinUI: {fileID: 0}
+  WinText: {fileID: 0}
+  check: 0
   nowBossHealth: 0
   nowBossDefensive: 0
 --- !u!195 &1965593408968515963

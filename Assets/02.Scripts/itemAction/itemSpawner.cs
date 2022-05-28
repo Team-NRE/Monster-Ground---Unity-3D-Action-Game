@@ -11,7 +11,7 @@ public class itemSpawner : MonoBehaviour
     public GameObject blueLight;
     #endregion
 
-    private float maxTime = 3.0f;
+    private float maxTime = 30.0f;
     private float nowTime = 0;
 
     private void Start()
@@ -31,13 +31,15 @@ public class itemSpawner : MonoBehaviour
             nowTime = maxTime;
             ItemSpawners();
         }
+
+
     }
 
     //특정 아이템들은 한번 생성되면 다시는 생성되지 않도록 해야함
-    private void ItemSpawners()
+    public void ItemSpawners()
     {
         //Transform[] itemSpawnPoint = GameObject.Find("itemSpawnPoints").GetComponentsInChildren<Transform>();
-        Vector3 RandomPosition = new Vector3(Random.Range(-140, 140), 0, Random.Range(-140, 140));
+        Vector3 RandomPosition = new Vector3(Random.Range(-100, 100), 0, Random.Range(-100, 100));
         Quaternion prepQuat = new Quaternion(0, 0, 0, 0);
         GameObject item;
 

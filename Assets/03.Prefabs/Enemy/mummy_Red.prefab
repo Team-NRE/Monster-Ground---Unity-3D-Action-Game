@@ -188,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 787903657419671651}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 6236591127421486822}
   - {fileID: 8030554567946730391}
@@ -263,11 +263,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Max_HP: 30
-  Defensive_Power: 2
+  Defensive_Power: 0
   speed_in_NavMeshAgent: 10
   Attack_Power: 20
-  Attack_Speed: 5
-  Experiance: 10
+  Attack_Speed: 3
+  Experiance: 30
 --- !u!1 &969251921362476739
 GameObject:
   m_ObjectHideFlags: 0
