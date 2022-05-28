@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6847102098910591375}
   - component: {fileID: 6847102098917386657}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: MeteorSwarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 6847102098910533901}
   - component: {fileID: 6847102098925750251}
   - component: {fileID: 6847102098925690119}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: MeteorExplosionParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4902,7 +4902,7 @@ GameObject:
   - component: {fileID: 6847102098910582649}
   - component: {fileID: 6847102098925746325}
   - component: {fileID: 6847102098926198693}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: MeteorShrapnelParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}

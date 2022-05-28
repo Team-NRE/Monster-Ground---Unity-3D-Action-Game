@@ -11,7 +11,7 @@ public class itemSpawner : MonoBehaviour
     public GameObject blueLight;
     #endregion
 
-    private float maxTime = 10.0f;
+    private float maxTime = 3.0f;
     private float nowTime = 0;
 
     private void Start()
@@ -37,7 +37,7 @@ public class itemSpawner : MonoBehaviour
     private void ItemSpawners()
     {
         //Transform[] itemSpawnPoint = GameObject.Find("itemSpawnPoints").GetComponentsInChildren<Transform>();
-        Vector3 RandomPosition = new Vector3(Random.Range(0, 15), 0, Random.Range(0, 15));
+        Vector3 RandomPosition = new Vector3(Random.Range(-70, 70), 0, Random.Range(-70, 70));
         Quaternion prepQuat = new Quaternion(0, 0, 0, 0);
         GameObject item;
 

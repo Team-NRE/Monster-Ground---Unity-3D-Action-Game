@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionText: {fileID: 0}
   theInventory: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 3409376055009876538}
 --- !u!114 &-5978491258730273266
 MonoBehaviour:
   m_ObjectHideFlags: 0
