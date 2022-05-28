@@ -47,13 +47,14 @@ public class Enemy : MonoBehaviour
     {
         if (!isDead) {
             float distance = Vector3.Distance(player.transform.position , transform.position);
+            nvAgent.destination = player.transform.position;
 
             if (Attack_Speed - anim["attack"].length >= Now_Attack_Cooling_Time)
                 anim.CrossFade("move");
-            nvAgent.destination = player.transform.position;
 
             if (Now_Attack_Cooling_Time > 0f)
                 Now_Attack_Cooling_Time -= Time.deltaTime;
+            
             else if(distance <= 2.5f)
             {
                 string result = player.GetComponent<PlayerHealth>().getHealth(-Attack_Power);

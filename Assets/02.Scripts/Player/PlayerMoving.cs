@@ -16,7 +16,7 @@ public class PlayerMoving : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         moveDirection = Vector3.zero;
-        mouseSpeed = 3f;
+        mouseSpeed = 5f;
     }
 
     void Update()

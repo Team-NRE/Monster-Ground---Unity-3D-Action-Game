@@ -674,15 +674,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d0cbbece527f94c95149c80aef02e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Max_HP: 100
-  Defensive_Power: 10
-  speed_in_NavMeshAgent: 2
+  Max_HP: 30
+  Defensive_Power: 2
+  speed_in_NavMeshAgent: 10
   Attack_Power: 20
   Attack_Speed: 5
   Experiance: 10
-  Now_HP: 0
-  Now_Attack_Cooling_Time: 0
-  isDead: 0
 --- !u!1 &5711343674004514851
 GameObject:
   m_ObjectHideFlags: 0

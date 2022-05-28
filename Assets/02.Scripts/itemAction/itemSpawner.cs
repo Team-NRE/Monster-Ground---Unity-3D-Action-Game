@@ -37,7 +37,7 @@ public class itemSpawner : MonoBehaviour
     private void ItemSpawners()
     {
         //Transform[] itemSpawnPoint = GameObject.Find("itemSpawnPoints").GetComponentsInChildren<Transform>();
-        Vector3 RandomPosition = new Vector3(Random.Range(-70, 70), 0, Random.Range(-70, 70));
+        Vector3 RandomPosition = new Vector3(Random.Range(-140, 140), 0, Random.Range(-140, 140));
         Quaternion prepQuat = new Quaternion(0, 0, 0, 0);
         GameObject item;
 
