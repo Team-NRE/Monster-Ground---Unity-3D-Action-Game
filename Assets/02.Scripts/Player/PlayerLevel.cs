@@ -60,7 +60,7 @@ public class PlayerLevel : MonoBehaviour
             int 30 * level + 20 : 레벨의 30배의 20을 더한 값이 그 레벨의 최대 경험치량
         */
 
-        return 30 * level + 20;
+        return 40 * level + 20;
     }
 
     public void getExperience(float e)

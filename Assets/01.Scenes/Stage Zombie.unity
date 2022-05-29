@@ -524,6 +524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: itemSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2566141881929491711, guid: 25643aab52250054f83e6c8ccbe90f92, type: 3}
+      propertyPath: itemAlert
+      value: 
+      objectReference: {fileID: 2120904338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25643aab52250054f83e6c8ccbe90f92, type: 3}
 --- !u!114 &1660483128 stripped
@@ -959,6 +963,11 @@ PrefabInstance:
 --- !u!1 &2120904337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5817672374889228023, guid: 9dc08f93bdc664c4996fdbc37bff80b2, type: 3}
+  m_PrefabInstance: {fileID: 2120904336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2120904338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1645182728, guid: 9dc08f93bdc664c4996fdbc37bff80b2, type: 3}
   m_PrefabInstance: {fileID: 2120904336}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5284095650080748

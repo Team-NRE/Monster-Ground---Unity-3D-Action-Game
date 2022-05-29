@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
     #region Stats
     [Header("- Health Type")]
     public static float maxHealth = 300f;
-    public static float defensivePower = 3f;
+    public static float defensivePower = 5f;
     public static int dodgeChance = 10;
 
     [Header("- Move Type")]

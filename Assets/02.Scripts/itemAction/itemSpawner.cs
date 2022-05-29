@@ -11,8 +11,12 @@ public class itemSpawner : MonoBehaviour
     public GameObject blueLight;
     #endregion
 
-    private float maxTime = 30.0f;
+    public GameObject itemAlert;
+
+    private float maxTime = 45.0f;
     private float nowTime = 0;
+    
+    
 
     private void Start()
     {
@@ -21,7 +25,7 @@ public class itemSpawner : MonoBehaviour
 
     private void Update()
     {
-        //1분에 한번씩 아이템을 출력
+        //45초에 한번씩 아이템을 출력
         nowTime -= Time.deltaTime;        
 
         //Debug.Log(maxTime);
@@ -64,5 +68,15 @@ public class itemSpawner : MonoBehaviour
         GameObject itemLight =  Instantiate(blueLight, new Vector3(0, 2f, 0), prepQuat);
 
         itemLight.transform.SetParent(item.transform, false);
+
+        StartCoroutine(itemAlertText());
+    }
+
+    IEnumerator itemAlertText()
+    {
+        itemAlert.SetActive(true);
+        yield return new WaitForSeconds(2.0f);
+
+        itemAlert.SetActive(false);
     }
 }

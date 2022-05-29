@@ -65,3 +65,4 @@ MonoBehaviour:
   - {fileID: 1711203304206852926, guid: 02451af4c1e64a44eb454f32ef4300a1, type: 3}
   - {fileID: 724645667287544728, guid: 6682ac1af77896b4386dd0b7bad38112, type: 3}
   blueLight: {fileID: 8885770001852042190, guid: 417cc1926b5f66a48a1a9c7ce3c029ed, type: 3}
+  itemAlert: {fileID: 0}

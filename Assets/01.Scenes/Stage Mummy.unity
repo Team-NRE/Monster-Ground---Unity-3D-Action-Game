@@ -621,6 +621,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 748096069977210692, guid: 1245623de0d907f4c92a422c0b6ca80a, type: 3}
   m_PrefabInstance: {fileID: 9241999}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1324750464 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1645182728, guid: 9dc08f93bdc664c4996fdbc37bff80b2, type: 3}
+  m_PrefabInstance: {fileID: 1382304666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1340601099 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2506932293597594309, guid: 9dc08f93bdc664c4996fdbc37bff80b2, type: 3}
@@ -959,10 +964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: itemSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 2566141881929491710, guid: 25643aab52250054f83e6c8ccbe90f92, type: 3}
-      propertyPath: m_TagString
-      value: itemSpawner
-      objectReference: {fileID: 0}
+    - target: {fileID: 2566141881929491711, guid: 25643aab52250054f83e6c8ccbe90f92, type: 3}
+      propertyPath: itemAlert
+      value: 
+      objectReference: {fileID: 1324750464}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25643aab52250054f83e6c8ccbe90f92, type: 3}
 --- !u!1 &2566141883725004307 stripped

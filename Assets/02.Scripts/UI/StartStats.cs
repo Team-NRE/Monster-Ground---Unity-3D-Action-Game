@@ -7,7 +7,7 @@ public class StartStats : MonoBehaviour
     public void Awake() 
     {
         PlayerStats.maxHealth = 300f;
-        PlayerStats.defensivePower = 3f;
+        PlayerStats.defensivePower = 5f;
         PlayerStats.dodgeChance = 10;
 
         PlayerStats.walkSpeed = 12f;

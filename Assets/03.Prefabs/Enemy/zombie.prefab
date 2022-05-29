@@ -327,7 +327,7 @@ MonoBehaviour:
   speed_in_NavMeshAgent: 12
   Attack_Power: 40
   Attack_Speed: 2
-  Experiance: 50
+  Experiance: 40
 --- !u!1 &1637568228294675326
 GameObject:
   m_ObjectHideFlags: 0
