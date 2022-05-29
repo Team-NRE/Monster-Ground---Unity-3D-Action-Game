@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     public static int dodgeChance = 10;
 
     [Header("- Move Type")]
-    public static float walkSpeed = 12f;
+    public static float walkSpeed = 14f;
 
     [Header("- Attack Type")]
     public static float bulletDamage = 15f;

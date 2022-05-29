@@ -21,10 +21,19 @@ public class PlayerMoving : MonoBehaviour
 
     void Update()
     {
+        if(Setting.GameIsPaused == false)
+        {
+            mouseSpeed = 0f;
+            // 마우스 회전 설정
+            transform.Rotate(0f, Input.GetAxis("Mouse X") * mouseSpeed, 0f, Space.World);
+        }
         
-        
-        // 마우스 회전 설정
-        transform.Rotate(0f, Input.GetAxis("Mouse X") * mouseSpeed, 0f, Space.World);
+        else
+        {
+            mouseSpeed = 6f;
+            // 마우스 회전 설정
+            transform.Rotate(0f, Input.GetAxis("Mouse X") * mouseSpeed, 0f, Space.World);
+        }
 
         // x, z 움직임 Input
         float x = Input.GetAxis("Horizontal");

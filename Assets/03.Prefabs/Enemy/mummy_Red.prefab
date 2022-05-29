@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Max_HP: 30
-  Defensive_Power: 0
+  Defensive_Power: 1
   speed_in_NavMeshAgent: 10
   Attack_Power: 20
   Attack_Speed: 3

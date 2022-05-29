@@ -185,13 +185,13 @@ public class Boss : MonoBehaviour
                     break;
 
                 case AnimState.FlyTRACE :
-                    nowBossDefensive = 10;
+                    nowBossDefensive = PlayerStats.bulletDamage - 10;
                     
                     FireFly.SetActive(false);
                     
                     NavMesh.SetDestination(Player.position);
                     NavMesh.isStopped = false;
-                    NavMesh.speed = 25.0f;
+                    NavMesh.speed = 30.0f;
                     
 
                     //Animator.attack 으로 가기
@@ -207,7 +207,7 @@ public class Boss : MonoBehaviour
                     
                 case AnimState.Attack :
                     //방어력 원래대로
-                    nowBossDefensive = 5;
+                    nowBossDefensive = 10;
                     
                     FireFly.SetActive(true);
                     Meteor.SetActive(false);
@@ -258,7 +258,7 @@ public class Boss : MonoBehaviour
                 case AnimState.Meteor :
                 {
                     //방어력 증가
-                    nowBossDefensive = 10;
+                    nowBossDefensive = PlayerStats.bulletDamage - 10 ;
                     
                     FireFly.SetActive(false);
                     

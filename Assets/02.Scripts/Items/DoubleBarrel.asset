@@ -20,7 +20,7 @@ MonoBehaviour:
   DodgeChance: 0
   WalkSpeed: 0
   BulletDamage: 0
-  BulletSpeed: 0
-  ShotSpeed: 0
+  BulletSpeed: 500
+  ShotSpeed: 0.1
   CriticalDamage: 0
   CriticalChance: 0

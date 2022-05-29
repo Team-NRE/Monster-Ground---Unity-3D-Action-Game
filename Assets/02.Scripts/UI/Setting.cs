@@ -10,12 +10,17 @@ public class Setting : MonoBehaviour
     public GameObject SettingUI;
     public GameObject resume;
     
-    public bool GameIsPaused;
-    
+    public static bool GameIsPaused;
+
     private void Awake() 
     {
         GameIsPaused = true;
         Time.timeScale = 1f;
+
+        // Mouse Lock
+        Cursor.lockState = CursorLockMode.Locked;
+        // Cursor visible
+        Cursor.visible = false;
     }
     
     
@@ -26,10 +31,21 @@ public class Setting : MonoBehaviour
             if(GameIsPaused == true)
             {
                 Pause();
+
+                // Mouse Lock
+                Cursor.lockState = CursorLockMode.None;
+                // Cursor visible
+                Cursor.visible = true;
             }
             else if(GameIsPaused == false)
             {
                 Resume();
+                
+                // Mouse Lock
+                Cursor.lockState = CursorLockMode.Locked;
+                // Cursor visible
+                Cursor.visible = false;
+
             }
         }
     }

@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12946d2a950431d4f88523d1b519735b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SP_Health: 300
+  SP_Health: 250
   SP_CoolingTime: 3
   Enemy_prefab: {fileID: 1632888535096718543, guid: d652a25febb7f324e84cdf6068e69337, type: 3}
   HealthGauge: {fileID: 8985045168551742179}

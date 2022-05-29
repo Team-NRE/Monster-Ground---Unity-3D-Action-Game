@@ -8,7 +8,10 @@ public class itemSpawner : MonoBehaviour
     public GameObject[] itemEpic;
     public GameObject[] itemRare;
     public GameObject[] itemCommon;
-    public GameObject blueLight;
+    public GameObject CommonLight;
+    public GameObject RareLight;
+    public GameObject EpicLight;
+
     #endregion
 
     public GameObject itemAlert;
@@ -55,19 +58,31 @@ public class itemSpawner : MonoBehaviour
             // Epic
             int itemIdx = Random.Range(0, itemEpic.Length);
             item = Instantiate(itemEpic[itemIdx], RandomPosition, prepQuat);
-        } else if (itemProb < 25) {
+        
+            GameObject itemLight =  Instantiate(EpicLight, new Vector3(0, 2f, 0), prepQuat);
+            itemLight.transform.SetParent(item.transform, false);
+        } 
+        
+        else if (itemProb < 25) 
+        {
             // Rare
             int itemIdx = Random.Range(0, itemRare.Length);
             item = Instantiate(itemRare[itemIdx], RandomPosition, prepQuat);
-        } else {
+
+            GameObject itemLight =  Instantiate(RareLight, new Vector3(0, 2f, 0), prepQuat);
+            itemLight.transform.SetParent(item.transform, false);
+        } 
+        
+        else 
+        {
             // Common
             int itemIdx = Random.Range(0, itemCommon.Length);
             item = Instantiate(itemCommon[itemIdx], RandomPosition, prepQuat);
+
+            GameObject itemLight =  Instantiate(CommonLight, new Vector3(0, 2f, 0), prepQuat);
+            itemLight.transform.SetParent(item.transform, false);
         }
 
-        GameObject itemLight =  Instantiate(blueLight, new Vector3(0, 2f, 0), prepQuat);
-
-        itemLight.transform.SetParent(item.transform, false);
 
         StartCoroutine(itemAlertText());
     }

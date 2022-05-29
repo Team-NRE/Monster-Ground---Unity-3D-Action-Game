@@ -18,9 +18,9 @@ MonoBehaviour:
   MaxHealth: 0
   DefensivePower: 0
   DodgeChance: 0
-  WalkSpeed: 0
-  BulletDamage: 0
-  BulletSpeed: 0
-  ShotSpeed: 0
+  WalkSpeed: 3
+  BulletDamage: 10
+  BulletSpeed: 1000
+  ShotSpeed: 0.3
   CriticalDamage: 0
   CriticalChance: 0

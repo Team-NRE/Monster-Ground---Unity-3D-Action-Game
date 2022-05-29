@@ -11,10 +11,14 @@ public class QuestControl : MonoBehaviour
 
     private int[] QuestCount;
 
+    public static bool IsPortalOpen = false;
+
     void Start() {
         QuestCount = new int[QuestList.Length];
 
         questTextChanger();
+
+        IsPortalOpen = false;
     }
 
     void questTextChanger() {
@@ -41,6 +45,7 @@ public class QuestControl : MonoBehaviour
                 else
                     itemspawner.SetActive(false);
                     GameObject.Find("Portal").transform.GetChild(0).gameObject.SetActive(true);
+                    IsPortalOpen = true;
                 break;
         }
     }

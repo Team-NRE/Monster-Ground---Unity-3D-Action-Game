@@ -68,7 +68,16 @@ public class Enemy : MonoBehaviour
 
             if (Now_HP <= 0)
             {
-                player.GetComponent<PlayerLevel>().getExperience(Experiance);
+                if(QuestControl.IsPortalOpen == true)
+                {
+                    player.GetComponent<PlayerLevel>().getExperience(0);
+                }
+                    
+                else    
+                {
+                    player.GetComponent<PlayerLevel>().getExperience(Experiance);
+                }
+
                 anim.CrossFade("death");
                 nvAgent.destination = transform.position;
                 Destroy(gameObject.GetComponent<Collider>());

@@ -19,8 +19,8 @@ MonoBehaviour:
   DefensivePower: 0
   DodgeChance: 0
   WalkSpeed: 0
-  BulletDamage: 5
+  BulletDamage: 13
   BulletSpeed: 0
   ShotSpeed: 0.5
   CriticalDamage: 0
-  CriticalChance: 0
+  CriticalChance: 15

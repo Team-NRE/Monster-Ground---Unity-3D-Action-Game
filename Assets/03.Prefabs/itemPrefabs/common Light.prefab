@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 145305837205696513}
   - component: {fileID: 7279310719630037277}
   m_Layer: 0
-  m_Name: Light
+  m_Name: common Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

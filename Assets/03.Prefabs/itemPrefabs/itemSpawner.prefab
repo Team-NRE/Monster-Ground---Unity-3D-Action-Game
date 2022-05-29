@@ -46,6 +46,7 @@ MonoBehaviour:
   itemEpic:
   - {fileID: 2692448412455191332, guid: c3ab2b50c46282548b25dad8665bbfb8, type: 3}
   - {fileID: 3458319176770533203, guid: 2c38126506b3655428e3472e6b3093ae, type: 3}
+  - {fileID: 8809441026377283817, guid: 4c103ca720b45b548ae8b9ce6e190eac, type: 3}
   itemRare:
   - {fileID: 3589501934668514514, guid: 807dcc60b061a064aa1aa137ecdc2eac, type: 3}
   - {fileID: 6367676745172621705, guid: cc92dbb8049df0f429677de1da4d7c0c, type: 3}
@@ -54,7 +55,6 @@ MonoBehaviour:
   - {fileID: 5586630743372253271, guid: 497c8d94dc52b1642bb2a412a8dc7568, type: 3}
   itemCommon:
   - {fileID: 3992051524170919410, guid: 9760a7076ecfdcd4bbc841cdfb56f9a5, type: 3}
-  - {fileID: 8809441026377283817, guid: 4c103ca720b45b548ae8b9ce6e190eac, type: 3}
   - {fileID: 2249932254729789109, guid: 59c3667a193b5ec4d96b07f1e1144711, type: 3}
   - {fileID: 2106882148554956387, guid: 7fecf179837b9244a873362906174de0, type: 3}
   - {fileID: 4794358734479881870, guid: b1c5d805d007fda43bd4d2b1a586d3b8, type: 3}
@@ -64,5 +64,7 @@ MonoBehaviour:
   - {fileID: 771983951736367133, guid: ad8b2de50fd8d184ba9ba7e2b9e3e767, type: 3}
   - {fileID: 1711203304206852926, guid: 02451af4c1e64a44eb454f32ef4300a1, type: 3}
   - {fileID: 724645667287544728, guid: 6682ac1af77896b4386dd0b7bad38112, type: 3}
-  blueLight: {fileID: 8885770001852042190, guid: 417cc1926b5f66a48a1a9c7ce3c029ed, type: 3}
+  CommonLight: {fileID: 8885770001852042190, guid: 417cc1926b5f66a48a1a9c7ce3c029ed, type: 3}
+  RareLight: {fileID: 8885770001852042190, guid: 5d5b4250927c22148a606a32f4e3c75c, type: 3}
+  EpicLight: {fileID: 8885770001852042190, guid: 78277adc42c4a1b498a3ab792b9667a6, type: 3}
   itemAlert: {fileID: 0}
