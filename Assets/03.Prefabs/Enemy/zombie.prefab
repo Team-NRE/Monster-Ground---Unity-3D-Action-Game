@@ -324,10 +324,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Max_HP: 50
   Defensive_Power: 5
-  speed_in_NavMeshAgent: 9
+  speed_in_NavMeshAgent: 12
   Attack_Power: 40
   Attack_Speed: 2
-  Experiance: 60
+  Experiance: 50
 --- !u!1 &1637568228294675326
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BackPackCannon
   m_EditorClassIdentifier: 
   itemType: 1
-  itemName: "\uBC31\uD329 \uCE90\uB17C"
+  itemName: "\uB85C\uCF13\uAC00\uBC29"
   itemImage: {fileID: 21300000, guid: b97c91e8b348f3f4ebdc11f5c82182cd, type: 3}
   MaxHealth: 0
   DefensivePower: 0

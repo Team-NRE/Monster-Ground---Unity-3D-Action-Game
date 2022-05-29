@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 0
   itemName: "\uB871\uC18C\uB4DC"
-  itemImage: {fileID: 21300000, guid: 0d15ed8682d4656469e4ff0d71cadbaa, type: 3}
+  itemImage: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
   MaxHealth: 0
   DefensivePower: 0
   DodgeChance: 0

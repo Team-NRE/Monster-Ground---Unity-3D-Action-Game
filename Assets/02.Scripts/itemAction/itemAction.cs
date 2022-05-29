@@ -21,6 +21,8 @@ public class itemAction : MonoBehaviour
     //중첩 아이템 구현용
     public static int steamCount = 0;
 
+     
+
     private void Start()
     {
         actionText.gameObject.SetActive(false);
@@ -82,6 +84,7 @@ public class itemAction : MonoBehaviour
             //(clone)을 제외하고 출력하기 위한 코드
             if (index > 0)
                 actionText.text = coll.gameObject.name.Substring(0, index) + " 을/를 획득!";
+            
             //actionText.text = coll.gameObject.name;
             actionText.gameObject.SetActive(true);
         }

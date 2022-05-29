@@ -44,4 +44,6 @@ public class Item : ScriptableObject
         this.CriticalDamage = _CriticalDamage;
         this.CriticalChance = _CriticalChance;
     }
+
+    
 }
