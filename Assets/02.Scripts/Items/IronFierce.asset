@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df9b3751180e4342aea3fcc1a165775, type: 3}
   m_Name: IronFierce
   m_EditorClassIdentifier: 
+  itemType: 0
   itemName: "\uC1E0\uBD99\uC774"
   itemImage: {fileID: 21300000, guid: da09804303305f542a686824630e7269, type: 3}
   MaxHealth: 0
   DefensivePower: 0
   DodgeChance: 0
   WalkSpeed: 0
-  BulletDamage: 0
+  BulletDamage: 5
   BulletSpeed: 0
   ShotSpeed: 0
-  CriticalDamage: 1
+  CriticalDamage: 5
   CriticalChance: 0

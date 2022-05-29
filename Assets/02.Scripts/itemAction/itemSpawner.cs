@@ -13,7 +13,7 @@ public class itemSpawner : MonoBehaviour
 
     public GameObject itemAlert;
 
-    private float maxTime = 45.0f;
+    private float maxTime = 30.0f;
     private float nowTime = 0;
     
     

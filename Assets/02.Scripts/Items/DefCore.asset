@@ -15,8 +15,8 @@ MonoBehaviour:
   itemType: 1
   itemName: "\uBC29\uC5B4\uD575"
   itemImage: {fileID: 21300000, guid: 2f1eaeeaad36ee5469eff7ff158f37ba, type: 3}
-  MaxHealth: 0
-  DefensivePower: 2
+  MaxHealth: 50
+  DefensivePower: 10
   DodgeChance: 0
   WalkSpeed: 0
   BulletDamage: 0

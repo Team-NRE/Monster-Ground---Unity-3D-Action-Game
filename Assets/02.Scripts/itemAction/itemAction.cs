@@ -77,6 +77,7 @@ public class itemAction : MonoBehaviour
             else if(coll.gameObject.name == "15. DeliMeat")
             {
                 gameObject.GetComponent<DeliMeat>().enabled = true;
+                DeliMeat.recoverCount++;
             }
 
             //item info 출력
