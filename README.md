@@ -1,4 +1,4 @@
-# Monster Ground - Unity 3D FPS Game 
+# Monster Ground - Unity 3D Action Game
 
 >This is a 3D action game created by benchmarking the steam game Vampire Survival. 
 <p>
