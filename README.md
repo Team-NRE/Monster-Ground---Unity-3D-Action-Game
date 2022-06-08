@@ -6,7 +6,7 @@
 </p>
 
 ## 🎯 Play Game
-  <a href="MonsterGround.zip"> download/Download Game</a>
+  <a href="MonsterGround.zip" download> Download Game</a>
 
 ## 📽 Game Screen
   * Start
