@@ -5,16 +5,25 @@
   <a><img src="https://img.shields.io/badge/unity3d-2020.3.33f1-blue?style=flat-square&logo=unity"></a>
 </p>
 
-## 📸 Game Screen
-  >Start
+## 📽 Game Screen
+  *Start
+  
 ![start](https://user-images.githubusercontent.com/92200057/172681127-2d7ac5c5-329f-4a42-ade0-9f000c532912.png)
-  >Stage Mummy
+  
+  *Stage Mummy
+  
 ![Stage Mummy](https://user-images.githubusercontent.com/92200057/172681705-a6a7e04e-1571-4e60-b133-24ec803d0d89.png)
-  >Stage Spider
+  
+  *Stage Spider
+  
 ![Stage Spider](https://user-images.githubusercontent.com/92200057/172681776-15d155b4-0b2c-4e24-aff8-0282ca6bc3cd.png)
-  >Stage Zombie
+  
+  *Stage Zombie
+  
 ![Stage Zombie](https://user-images.githubusercontent.com/92200057/172681790-d429db97-79a5-4872-9548-eeb5ae943ccc.png)
-  >Stage Boss
+  
+  *Stage Boss
+  
 ![Stage Boss](https://user-images.githubusercontent.com/92200057/172681794-bab760ee-7f36-40e7-b028-1702b665b884.png)
 
 ## 📢 YouTube
