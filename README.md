@@ -5,6 +5,9 @@
   <a><img src="https://img.shields.io/badge/unity3d-2020.3.33f1-blue?style=flat-square&logo=unity"></a>
 </p>
 
+## 🎯 Play Game
+  <a href="Monster Ground.zip" download/Download Game</a>
+
 ## 📽 Game Screen
   * Start
   
